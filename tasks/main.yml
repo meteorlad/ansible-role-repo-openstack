@@ -1,0 +1,6 @@
+---
+# tasks file for roles/repo-openstack
+
+# Configure OpenStack repo
+- name: Configure OpenStack Repo
+  template: src=openstack.repo.j2 dest=/etc/yum.repos.d/
